@@ -1,0 +1,158 @@
+body {
+    #block-views-awards-list-block {
+        color: $white;
+        background-image: url('../images/brand/price_award_band.png');
+        background-position: bottom right;
+        background-size: auto 200px;
+        background-repeat: no-repeat;
+        background-color: $black;
+        .view-awards-list{
+            padding-bottom: 170px;
+            @include mq('md'){
+                @include wrapper-internal();
+                
+            }            
+            .view-header {
+                display: flex;
+                flex-wrap: wrap;
+                @include mq('md'){
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .image-awards{
+                    min-height: 600px;
+                    background-image: url('../images/brand/trophy_pack_centre.png');
+                    background-size: auto 100%;
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    font-size: 0px;
+                    width: 100%;
+                    @include mq('md'){
+                        min-height: 626px;
+                        width: 35%;
+                        &.show-awards {
+                            left: -90px;
+                            opacity: 0;
+                            position: relative;
+                            animation: ani-award 2s ease 2s forwards;
+                        }
+
+                        @keyframes ani-award {
+                            100%{
+                                left: 0px;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+                .caption-awards {
+                    padding: rem(30px);
+                    @include mq('md'){
+                        padding: inherit;
+                        width: 60%;
+                    }
+                    h3 {
+                        color: $red-text;
+                        @include font(35px)
+                    }
+                }
+            }
+
+            .view-container {
+                display: none;
+                >h2,>h3,>p{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    text-align: center;
+
+                    @include mq('md'){
+                        text-align: left;
+                    }
+                }
+                >h2,>h3{
+                    text-transform: uppercase;
+                    @include font(25px);
+                }
+
+                >p{
+                    text-transform: uppercase;
+                }
+
+                >h2{
+                    margin-bottom: 0;
+                }
+                >h3{
+                    margin-top: 0;
+                    color: $red-text;
+                }
+
+                .view-content{
+                    margin-top: rem(40px);
+                    .views-row{
+                        text-align: center;
+                        .views-field-name, .views-field-description{
+                            max-width: 200px;
+                            margin-right: auto;
+                            margin-left: auto;
+                        }
+                        .views-field-name{
+                            color: $yellow-link-menu;
+                            @include font(20px);
+                        }
+                        .views-field-description{
+                            @include font(14px);
+                        }
+
+                        @include mq('md'){
+                            display: inline-block;
+                            vertical-align: middle;
+                            cursor: default;
+                            text-align: center;
+                            width: 32%;
+                            transform: scale(0.9);
+                            padding-top: rem(5px);
+                            padding-bottom: rem(5px);
+                            transition: 1s all;
+
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+
+                    .slick-prev,.slick-next{
+                        top: 44%;
+                    }
+
+                    .slick-prev{
+                        background-image: url('../images/icons/arrow-left.png');
+                        left: 10px;
+                    }
+
+                    .slick-next{
+                        background-image: url('../images/icons/arrow-right.png');
+                        right: 10px;
+                    }
+
+                    @include mq('md'){
+                        margin-top: rem(30px);
+                    }
+                }
+
+                
+                @include mq('md'){
+                    float: right;
+                    width: 65%;
+                    padding-top: rem(150px);
+                }
+            }
+
+            &:after{
+                display: block;
+                clear: both;
+                content: ' ';
+            }            
+        }
+    }    
+}

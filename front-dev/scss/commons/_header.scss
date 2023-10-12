@@ -1,0 +1,233 @@
+.navbar {
+	background-color: transparent;
+	border-color:transparent;
+	&.container {
+		margin: 0 auto;
+		padding: 10px;
+		max-width: 100%;
+		width: 100%;		
+		.container {		
+			max-width: rem(1170px);	
+			margin: 0 auto;
+			.navbar-header {
+				
+				button.navbar-toggle{
+					border-color: transparent;
+					margin-right: 0px;
+					margin-top: 0px;
+
+					&:hover{
+						background-color: transparent;
+					}
+					.icon-bar{
+						background-color:$red;
+						height: 2px;
+					}
+
+					/*@include mq('sm'){
+						display: block;
+					}*/
+
+					@include mq('sm'){
+						display: none;
+					}
+				}
+				a {
+					&.logo {
+						img {
+							width: 14rem;
+						}
+					}
+				}
+
+				/*@include mq('sm'){
+					float: none;
+				}*/
+			}
+
+			.navbar-collapse {
+				background: $black;
+				left: 0;
+				margin-left: 0;
+				margin-right: 0;
+				position: absolute;
+				top: 0px;
+				width: 100%;
+				text-align: center;
+				height: rem(740px);
+				z-index: 5;
+				border-top: 0;
+
+				.button-menu-mobile-close{
+					background-image: url('../images/icons/button_close.png');
+					width: rem(20px);
+					height: rem(20px);
+					position: absolute;
+					right: rem(15px);
+					top: rem(20px);
+					cursor: pointer;
+					@include bgcover();
+
+					@include mq('sm') {
+						display: none;
+					}
+				}
+
+				.navbar-nav {
+					float: none;
+					clear: both;
+					padding-top: rem(50px);
+					> li {
+						display: block;
+						padding: 30px 0px;
+						text-align: center;
+						a {
+							padding: 0px 0px;
+							color: $white;
+							text-transform: uppercase;
+							width: min-content;
+							border-bottom: 4px solid transparent;
+							display: initial;
+							@include font(35px);
+							&:hover,
+							&:focus {
+								border-bottom: 4px solid $border-yellow;
+							}
+
+							@include mq('sm'){
+								display: block;
+								@include font(24px);
+								transform: skew(15deg);
+								border-bottom: 0px solid transparent;
+								margin-top: 1.8rem;
+								&:hover,
+								&:focus {
+									border-bottom: 0px solid transparent;
+								}
+							}
+
+						}
+						&.active {
+							a {
+								border-bottom: 4px solid $border-yellow;
+								background-color: transparent;
+							}
+						}
+
+						@include mq('sm') {
+							display: inline-block;
+							vertical-align: middle;
+							padding: 8px 15px;
+							transform: skew(-15deg);
+							margin-left: 5px;
+							margin-right: 5px;
+							margin-top: 5px;
+
+							&:hover,
+							&:focus{
+								background: white;
+
+								a{
+									color: $black;
+								}
+							}
+						}
+
+						@media(min-width:932px){
+							&:nth-of-type(3){
+								a{
+									width: 180px;
+								}
+							}
+						}
+					}
+
+					@include mq('sm'){
+						padding-top: rem(0px);
+					}
+				}
+
+				/*@include mq('sm'){
+					display: none !important;
+				}*/
+
+				@include mq('sm'){
+					background: transparent;
+					width: auto;
+					display: block !important;
+					position: relative;
+					float: right !important;
+					@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+						max-width:500px;
+					}
+				}
+			}
+
+			.navbar-collapse,
+			.navbar-header {
+				@include mq('sm') {
+					display: inline-block !important;
+					vertical-align: middle;
+					float: none;
+				}
+			}
+
+			
+			// Brand
+			.name {
+				&.navbar-brand {
+					display: none;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		// Scrolled menu 
+		&.scroll_menu {
+			
+			.container {
+				// Brand
+				.navbar-header {
+					a {
+						&.logo {
+							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.navbar.container .container .navbar-collapse .navbar-nav{
+		width: 500px;
+	}
+}
+
+// Remove stroke in active menu just in home
+
+body {
+	&.front {
+		.navbar {
+			background-color: $black;
+			&.container {
+				.container {
+					.navbar-collapse {
+						.navbar-nav {
+							> li {
+								&.last{
+									&.active {
+										a {
+											border-bottom: none;
+										}
+									}
+								}								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

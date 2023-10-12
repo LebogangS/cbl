@@ -1,0 +1,339 @@
+body {
+
+  #block-views-slider-home-block-gold-medal {
+    .slick__arrow {
+      .slick-prev, .slick-next {
+        display: none;
+  
+        @include mq('sm') {
+          display: block;
+          top: 500px;
+          width: 35px;
+          height: 35px;
+        }
+      }
+
+      .slick-prev {
+        @include mq('sm') {
+          background-image: url('../images/icons/arrow-left.png');
+          left: 60px;
+        }
+      }
+
+      .slick-next {
+        @include mq('sm'){
+          background-image: url('../images/icons/arrow-right.png');
+          right: 60px;
+        }
+      }
+    }
+  }
+  
+  .view-id-slider_home {
+    .gold-home {
+      line-height: 0.7;
+      h2 {
+        line-height: 0.9;
+  
+        @include mq('sm') {
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+
+  &.gold-medal {
+    .region-content {
+      background: #000;
+      color: #fff;
+
+      .view-id-slider_home {
+        .home-carling-black-slider-item {
+          .home-carling-black-slider-item-image-desktop {
+            display: none;
+  
+            @include mq('sm'){
+              display: block;
+            }
+          }
+  
+          .home-carling-black-slider-item-image-mobile {
+            @include mq('sm'){
+              display: none;
+            }
+          }
+        }
+      }
+
+      #block-system-main, #block-views-gold-medal-award-block, #block-views-golden-questions-block {
+        max-width: 34rem;
+        margin: 0 auto;
+
+        @include mq('sm'){
+          max-width: 75vw;
+        }
+
+        h2 {
+          color: #bca25f;
+          font-size: 40px;
+          margin-bottom: 45px;
+        }
+
+        .underline-red {
+          border-bottom: 5px solid #ce1126;
+        }
+
+        p {
+          font-size: 20px;
+        }
+
+        .view-gold-medal-award {
+          .views-row {
+            font-size: 20px;
+            border-top: 5px solid #bca25f;
+            padding-top: 40px;
+            margin-bottom: 0;
+
+            &.views-row-last {
+              border-bottom: 5px solid #bca25f;
+              margin-bottom: 45px;
+            }
+
+            .views-field-name {
+              // color: #bca25f;
+              // font-size: 45px;
+              // margin-bottom: 40px;
+              display: none;
+            }
+
+            .gold-medal-total {
+              color: #ce1126;
+            }
+
+            table {
+              &.cbl-awards {
+
+                tbody {
+                  th {
+                    font-size: 45px;
+                    padding-bottom: 45px;
+
+                    &.gold {
+                      color: #bca25f;
+
+                      &.closed-award {
+                        &:hover{
+                          cursor:pointer;
+                        }
+                        
+                        &:after {
+                          content: "\276F";
+                          position: absolute;
+                          right: 13vw;
+                          color: #ce1126;
+                          transition: all .35s;
+                          transform: rotate(90deg);
+  
+                          @include mq('sm'){
+                            right: 20vw;
+                          }
+                        }
+                      }
+
+                      &.open-award {
+                        &:hover{
+                          cursor:pointer;
+                        }
+
+                        &:after {
+                          content: "\276F";
+                          position: absolute;
+                          right: 13vw;
+                          margin-top: 470px;
+                          color: #ce1126;
+                          transition: all .35s;
+                          transform: rotate(-90deg);
+  
+                          @include mq('sm'){
+                            right: 20vw;
+                            margin-top: 390px;
+                          }
+                        }
+                      }
+                    }
+
+                    &.award-number {
+                      display: none;
+                    }
+                  }
+
+                  td {
+                    display: none;
+
+                    &.right {
+                      text-align: right;
+                    }
+
+                    &.left {
+                      @include mq('sm'){
+                        width: 60vw;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .view-golden-questions {
+          .views-row {
+            background: #4D4D4D;
+            padding: 20px;
+            border-bottom: 5px solid #bca25f;
+
+            .views-field-title {
+              color: #bca25f;
+              font-size: 28px;
+
+              &:hover {
+                cursor: pointer;
+              }
+
+              &.closed-answers {
+                &:after {
+                  content: "\276F";
+                  position: absolute;
+                  margin-left: 8vw;
+                  margin-top: 45px;
+                  color: #ce1126;
+                  transition: all .35s;
+                  transform: rotate(90deg);
+  
+                  @include mq('sm'){
+                    margin-left: 34vw;
+                  }
+  
+                  @include mq('md'){
+                    margin-left: 45vw;
+                    margin-top: 25px;
+                  }
+                }
+              }
+
+              &.open-answers {
+                &:after {
+                  content: "\276F";
+                  position: absolute;
+                  margin-left: 8vw;
+                  margin-top: 86px;
+                  color: #ce1126;
+                  transition: all .35s;
+                  transform: rotate(-90deg);
+  
+                  @include mq('sm'){
+                    margin-left: 34vw;
+                  }
+  
+                  @include mq('md'){
+                    margin-left: 45vw;
+                    margin-top: 65px;
+                  }
+                }
+              }
+            }
+
+            .views-field-field-class-css {
+              font-size: 20px;
+              margin-bottom: 15px;
+              width: 240px;
+  
+              @include mq('md'){
+                width: initial;
+              }
+            }
+
+            .views-field-field-answer {
+              display: none;
+              p {
+                line-height: 1;
+                font-size: 20px;
+
+                &.correct-answer {
+                  color: #ce1126;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #block-system-main {
+        @include mq('sm'){
+          max-width: initial;
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../images/bg/cbl-bottles_gold.png");
+        }
+
+        article {
+          @include mq('sm'){
+            max-width: 75vw;
+            margin: 0 auto;
+          }
+        }
+      }
+
+      #block-views-gold-medal-award-block {
+        @include mq('sm'){
+          max-width: initial;
+          background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../images/bg/cbl-bottles_gold.png");
+          background-position: left;
+        }
+
+        div, h2 {
+          @include mq('sm'){
+            max-width: 75vw;
+            margin: 0 auto;
+          }
+        }
+
+        h2 {
+          margin-top: 75px;
+
+          @include mq('sm'){
+            margin: 40px auto;
+            margin-top: 75px;
+          }
+        }
+      }
+
+      #block-views-gold-medal-award-block, #block-views-golden-questions-block {
+        text-transform: uppercase;
+      }
+
+      #block-views-golden-questions-block {
+        h2 {
+          &.block-title {
+            text-align: center;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 100px;
+              border-top: 5px solid #ce1126;
+              margin: -7px 80px;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              width: 100px;
+              border-top: 5px solid #ce1126;
+              margin: 47px -202px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

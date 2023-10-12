@@ -1,0 +1,149 @@
+html{
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	font-family: $td-lt;
+	background-color: $black;
+	color: $white;
+	font-family: 'Trade Gothic LT Std BdCn20';
+	height: 100%;
+
+	strong,
+	b {
+		
+	}
+
+	p {
+		@include font(16px);
+		@include mq('md'){
+			@include font(20px);
+		}
+	}
+
+	// Link styles
+	button,
+	a {
+		transition: all 0.3s;
+		cursor: pointer;
+		&:hover {
+			transition: all 0.2s;
+		}
+	}
+	.label_or {
+		display: none !important;
+	}
+
+	// Layout
+	.main-container {
+		margin: 0 0 0 0;
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+
+		&.container{
+			>div.row{
+				margin-top: $margin-top-banner-mobile-banner;
+				background: white;
+				color:black;
+				@include mq('md'){
+					margin-top: $margin-top-banner-desktop-banner;
+				}
+			}
+		}
+		.row {
+			padding: 0 0 0 0;
+			margin: 0 0 0 0;
+			.col-sm-3 {
+				min-height: initial;
+			}
+			.col-sm-9,
+			.col-sm-12 {
+				padding: 0 0 0 0;
+				min-height: initial;
+				margin: 0 auto;
+				float: none;
+				clear: both;
+				width: 100%;
+			}
+		}
+
+		// Layout fixes
+		aside {
+			&.col-md-3 {
+				display: none;
+			}
+		}
+		
+		h1 {
+			&.page-header {
+				display: none;
+			}
+		}
+
+		#page-header{
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: $height-banner-mobile-banner;
+			z-index: -1;
+			background-image: url('../images/bg/field-background.jpg');
+			@include bgcover();
+
+			.banner-logo-circle{
+				width: rem(120px);
+				height: rem(120px);
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: rem(50px);
+				background-image: url('../images/brand/carling_black_label_cup_logo.png');
+				background-position: center;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				@include mq('md'){
+					width: rem(190px);
+					height: rem(190px);
+					margin-top: rem(60px);
+				}
+			}
+
+			@include mq('md'){
+				height: $height-banner-desktop-banner;
+			}
+		}
+	}
+
+	// forms 
+	form {
+		select{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			&::-ms-expand {
+				display: none;
+			}
+		}		
+	}
+
+	.form-textarea-wrapper{
+		.grippie{
+			display: none;
+		}
+	}
+
+	.nav{
+		>li{
+			>a{
+				&:hover{
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+body[attribute='data-bg-desktop']{
+	@include bgcover();
+}

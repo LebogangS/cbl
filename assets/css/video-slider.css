@@ -1,0 +1,372 @@
+.slick-section {
+      margin-top: -200px;
+}
+.slick-section, .video-section {
+      padding: 25px;
+      text-align: center;
+      width: 100%;
+}
+.slick-section .slick-container {
+      width: 700px;
+      margin: 0 auto;
+      position: relative !important;
+}
+/* .slick-section .slick-wrap {
+margin: 0 -10px;
+}
+*/
+
+.slick-item .wrapper #video-cover{
+      width: 700px !important;
+}
+
+.slick-section .slick-wrap .slick-item {
+      width: 700px;
+      height: 521px;
+} 
+
+.slick-item .wrapper{
+      position: absolute !important;
+      top: 0;
+} 
+
+ .slick-item .wrapper .video-cover{
+       width: 700px !important;
+      height: inherit !important;
+      display: block !important;
+}
+
+.slick-item .wrapper .video-cover{
+      width: 700px !important;
+      border: 3px solid red;
+}
+
+.play-btn img {
+      width: 100px !important;
+}
+
+ .slick-item .wrapper iframe{
+      width: 700px !important;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+}
+
+
+
+.slick-item .wrapper buton{
+      z-index: 1 !important;
+      position: absolute;
+      top: 130px;
+      left: 250px;
+      
+}
+   
+
+    .m-only {
+          display: none;
+    }
+    
+    @media only screen and (max-width: 1024px) {
+
+
+      .home-slider-text h5 {
+            font-size: 30px;
+            color: #D6001C;
+            width: 300px !important;
+      }
+
+
+      body.custom-carling-black-home .main-container #block-views-slider-home-block .view-slider-home .view-content ul.slick-dots {
+            bottom: -12px !important;
+      }
+      .m-only img {
+            display: none !important;
+      }
+
+      .slick-section, .video-section {
+            display: flex;
+            flex-direction: column-reverse;
+      }
+  
+      
+      .m-only img, .home-slider-text figure img{
+            /* display: none !important; */
+      }
+          .slick-section {
+                padding: 0;
+                margin-top: 30px;
+          }
+          .slick-section .slick-container{
+                width: 300px;
+                margin: 0 auto !important;
+          }
+          .slick-section .slick-wrap .slick-item {
+                width: 80%;
+                height: 212px;
+                margin: 0 auto !important;
+          }     
+
+          .video-arrows {
+            display: none !important;
+      }
+  
+
+          .home-slider-text  figure {
+                /* display: none !important; */
+          }
+    
+          .home-slider-text h3{
+          font-size: 40px !important;
+          /* margin-top: 0 !important; */
+          }
+    
+    
+          .home-slider-text h6{
+                font-size: 22px;
+                color: #fff;
+          }
+    
+          .home-slider-text h5{
+                font-size: 25px;
+                color: #D6001C;
+          }
+    
+          .home-slider-text button{
+          }
+    
+          .home-slider-text {
+                text-align: left;
+                  /* margin-top: 0 !important; */
+          }
+
+          .slick-section .slick-wrap .slick-item iframe{
+            width: inherit;
+            height: inherit;
+          } 
+
+          .slick-section .slick-container {
+            width: 100%;
+            margin: 0 auto !important;
+        }
+        
+        .slick-item .wrapper {
+              width: 300px !important;
+        }
+        
+        .play-btn img {
+            width: 50px !important;
+        }
+
+        .slick-item .wrapper #video-cover{
+              width: 300px !important;
+      }
+      
+
+        .slick-item .wrapper button{
+            top: 50px !important;
+            left: 120px !important;
+      }
+      .webform-component--fathers-day-header-3 .celebrate-cbl-fathers-day-header {
+            right: unset;
+      }
+         
+    }
+
+    .custom-carling-black-contact .main-container .row .col-sm-9, body .main-container .row .col-sm-12     {
+      background-image: unset;
+  }
+
+  .view-banner-home  .main-container .row .col-sm-9, body .main-container .row .col-sm-12 {
+      background-image: unset;
+  }
+  
+    
+    .slick-section .slick-wrap .slick-item iframe{
+      width: inherit;
+    } 
+    
+    
+    .slick-section .slick-wrap h2 {
+      display: none;
+    }
+    .slick-section .slick-dots {
+      list-style-type: none;
+      margin: 25px 0 0;
+      padding: 0;
+    }
+    .slick-section .slick-dots li {
+      width: auto !important;
+      height: auto !important;
+      display: inline-block !important; 
+      padding: 0 5px !important;
+      height: 32px !important;
+      float: left !important;
+      bottom: -15px !important;
+    }
+
+body.custom-carling-black-home .main-container #block-views-slider-home-block .view-slider-home .view-content ul.slick-dots>li.slick-active button {
+      background-image: unset !important;
+  }
+  body.custom-carling-black-home .main-container #block-views-slider-home-block .view-slider-home .view-content ul.slick-dots>li button {
+      background-image: unset !important;
+  }
+    
+    
+    .slick-section .slick-dots li:first-child button::after {
+    content: "";
+    border: 1px solid #ffff;
+    margin-left: 12px;
+    bottom: 0;
+    background-image: none !important;
+    background-image: unset !important;
+    
+    }
+    .slick-section .slick-dots li button {
+      width: auto;
+      height: auto !important;
+      padding: 10px;
+      font-size: 21px !important;
+      border: none;
+      background: transparent;
+      color: #fff;
+      width: 50px !important;
+      text-align: left !important;
+      font-weight: normal;
+      bottom: 6px !important;
+    }
+    .slick-section .slick-dots li button:before {
+      content: none;
+    }
+    .slick-section .slick-dots li.slick-active button {
+          font-weight: bold;
+          text-decoration: underline;
+    }
+    
+    /*
+    @media only screen and (max-width: 600px) {
+          iframe {
+                width: 600px;
+          }
+    }
+    
+    @media only screen and (min-width: 600px) {
+    
+    }
+    
+    @media only screen and (min-width: 768px) {
+          iframe {
+                width: 768px;
+          }
+    }
+    
+    @media only screen and (min-width: 992px) {
+          iframe {
+                width: 992px;
+          }
+    }
+    
+    @media only screen and (min-width: 1200px) {
+          iframe {
+                width: 1200px;
+          }
+    }*/
+    
+    
+    .home-slider-text h3{
+          font-size: 54px;
+          color: #fff;
+          margin-top: 0 !important;
+    }
+    
+    .home-slider-text h3 span{
+          color: #D6001C;
+    }
+    
+    
+    .home-slider-text h6{
+          font-size: 22px;
+          color: #fff;
+    }
+    
+    .home-slider-text h5{
+          font-size: 30px;
+          color: #D6001C;
+    }
+    
+    .home-slider-text button{
+    }
+    
+    .home-slider-text {
+          text-align: left;
+          margin-top: -185px;
+    }
+    .home-slider-text figure img{
+          margin-top: 10px;
+      width: 100px;
+}
+    .banner-button {
+      background-color: #ce1126;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 10px;
+      width: 232px;
+    height: 53px;
+      cursor: pointer;
+      margin: 5px;
+      text-transform: uppercase;
+      /* font-size: 24px; */
+    }
+    
+    .banner-button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .banner-button:hover span {
+      padding-right: 5px;
+    }
+    
+    .banner-button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    
+    .banner-button span i{
+          position: absolute;
+          top: 23%;
+          right: -25px;
+    }
+
+    .video-arrows {
+          display: none;
+    }
+
+    .video-arrows li{
+      color: transparent;
+      list-style: none;
+ }
+ 
+ .video-arrows .next {
+       position: absolute;
+       top: 40%;
+       background-image: url(https://cbl.dd:8443/sites/default/themes/site/assets/css/a2c7d362e1063bdb866f57ac422b73b2.png);
+       right: -40px;
+       background-repeat: no-repeat;
+ }
+ .video-arrows .prev{
+       position: absolute;
+       top: 40%;
+       left: -38px;
+       background-image: url(https://cbl.dd:8443/sites/default/themes/site/assets/css/23447ba7116986d5a2c6f4dfd7add222.png);
+       background-repeat: no-repeat;
+ }
+ 
+ .home-banner-icon {
+      width: 100px;
+      display: none !important;
+}

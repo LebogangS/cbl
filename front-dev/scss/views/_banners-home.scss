@@ -1,0 +1,117 @@
+#block-views-banner-home-block{
+    .view-banner-home {
+        .view-content{
+            font-size: 0;
+            max-width: rem(1360px);
+            margin: 0 auto;
+            .views-row{
+                margin-bottom: 0;
+                display: inline-block;
+                vertical-align: top;
+                width: 33.3%;
+                .home-carling-black-banner-item{
+                    position: relative;
+                    overflow: hidden;
+
+                    @include mq('md'){
+                        transform: scale(0.9);
+                        transition: all 1s;
+                    }
+
+                    &:hover{
+                        @include mq('md'){
+                            transform: scale(1);
+                        }
+
+                        .home-carling-black-banner-item-content{
+                            animation: rise-item-banner-home 0.3s linear;
+                            animation-fill-mode: forwards;
+                            padding-top: 30%;
+                            >p, >a{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .home-carling-black-banner-item-image-mobile{
+                        position: relative;
+                        min-height: $home-min-height-slider;
+
+                        >img{
+                            min-height: $home-min-height-slider;
+                        }
+                        &:after{
+                            
+                        }
+                    }
+                    .home-carling-black-banner-item-image-desktop{
+                        display: none;
+                    }
+                    .home-carling-black-banner-item-content{
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(206,17,38,0.5);
+                        padding-top: 32%;
+                        @include mq('md'){
+                            padding-top: rem(25px);
+                        }
+                        
+                        h2,p{
+                            color: $white;
+                            text-align: center;
+                            max-width: rem(320px);
+                            margin-right: auto;
+                            margin-left: auto;
+                        }
+
+                        >h2{
+                            text-transform: uppercase;
+                            @include font(35px);
+                        }
+                        >p{
+                            @include font(16px);
+                        }
+
+                        >a{
+                            margin-top: rem(20px);
+                            display: block;
+                            @include button-yellow();
+                            margin-right: auto;
+                            margin-left: auto;
+                            max-width: 130px;
+                        }
+
+                        @include mq('md'){
+                            top: initial;
+                            padding-top: rem(10px);
+                            height: initial;
+                            background-color: rgba(0,0,0,0.5);
+                            bottom: 0;
+                            height: 117px;
+                            >p, >a{
+                                opacity: 0;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+
+            .slick-prev,.slick-next{
+                top: 46%;
+                height: 30px;
+            }
+
+            .slick-prev{
+                background-image: url('../images/icons/arrow-left.png');
+                left: 5px;
+            }
+
+            .slick-next{
+                background-image: url('../images/icons/arrow-right.png');
+                right: 5px;
+            }
+        }
+    }
+}

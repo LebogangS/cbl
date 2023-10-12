@@ -1,0 +1,446 @@
+body.custom-carling-black-about{
+    @include remove-banner-from-body();
+
+    #navbar{
+        background: transparent;
+        z-index: 1;
+    }
+
+    .main-container{
+        position: relative;
+        top: $home-content-space-top;
+
+        #block-views-banner-about-block{
+            color: $white;
+            padding-top: rem(60px);
+            text-align: center;
+            background-color: $black;
+            .view-banner-about{
+                .view-content{
+                    @include mq('md'){
+                        @include wrapper-internal();
+                        text-align: left;
+                    }
+                    .about-carling-black-banner-item{
+
+                        >h2{
+                            @include font(33px);
+                            padding-left: 15px;
+                            padding-right: 15px;
+                            @include mq('md'){
+                                padding-left: 0;
+                                padding-right: 0;
+                            }
+                        }
+
+                        >p{
+                            @include font(16px);
+                            padding-left: 1.6rem;
+                            padding-right: 1.6rem;
+                            @include mq('md'){
+                                @include font(18px);
+                                padding-left: 0;
+                                padding-right: 0;
+                            }
+                        }
+
+                        >.items-info{
+                            padding-left: (20px);
+                            padding-right: (20px);
+                            >.item-info{
+                                padding-top: rem(10px);
+                                padding-bottom: rem(10px);
+                                border-bottom: 1px solid $yellow-link-menu;
+
+                                &:last-child{
+                                    border-bottom: 1px solid transparent;
+                                }
+
+                                h3,h4{
+                                    width: 49%;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin: 0;
+
+                                    @include mq('md'){
+                                        display: block;
+                                        margin-left: auto;
+                                        margin-right: auto;
+                                    }
+                                }
+
+                                h3{
+                                    color: $red-text;
+                                    text-align: left;
+                                    @include font(65px);
+                                    >span{
+                                        @include font(35px);
+                                        
+                                    }
+                                    @include mq('md'){
+                                        text-align: center;
+                                    }
+                                }
+
+                                h4{
+                                    text-align: right;
+                                    text-transform: uppercase;
+                                    @include font(20px);
+                                    @include mq('md'){
+                                        text-align: center;
+                                    }
+                                }
+
+                                @include mq('md'){
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    width: 35%;
+                                    border-bottom: 0;
+                                    border-right: 1px solid $yellow-link-menu;
+                                    text-align: center;
+
+                                    h3,h4{
+                                        width: auto;
+                                    }
+                                    
+
+                                    &:first-child{
+                                        width: 30%;
+                                        h3{
+                                            margin-left: 0;
+                                            text-align: left;
+                                        }
+                                        h4{
+                                            text-align: left;
+                                            margin-left: 10px;
+                                        }
+                                    }
+
+                                    &:last-child{
+                                        width: 35%;
+                                        border-right: 0; 
+                                        h3{
+                                            margin-left: 0;
+                                            text-align: right;
+                                        }
+                                        h4{
+                                            text-align: left;
+                                            text-align: right;
+                                            margin-right: 30px;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+
+
+                            @include mq('md'){
+                                padding-left: 0;
+                                padding-right: 0;
+                                font-size: 0;
+                                margin-top: rem(50px);
+                            }
+                        }
+
+                        >.container360{
+                            margin-top: rem(20px);
+                            text-align: center;
+                            height: 415px;
+                            >img{
+                                margin-left: auto;
+                                margin-right: auto;
+                                height: 74%;
+                                opacity: 0;
+                                transform: scale(0.7);
+                                animation: show-img360 1s ease 0.5s forwards;
+                            }
+
+                            @keyframes show-img360 {
+                                0%{
+                                    opacity: 0;
+                                    transform: scale(0.7);
+                                }
+                                100% {
+                                    opacity: 1;
+                                    transform: scale(1);
+                                }
+                            }
+                            .menu360{
+                                list-style: none;
+                                padding: 0;
+                                margin-top: rem(15px);
+                                text-align: center;
+                                >li{
+                                    font-size: 0;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    width: 30px;
+                                    height: 60px;
+                                    background-size: 100% auto;
+                                    background-repeat: no-repeat;
+                                    background-position: bottom;
+                                    cursor: pointer;
+                                    &:first-child{
+                                        background-image: url('../images/icons/can_icon_white_360.png');
+                                        &.active {
+                                            background-image: url('../images/icons/can_icon_360.png');
+                                        }
+                                    }
+
+                                    &:last-child{
+                                        background-image: url('../images/icons/bottle_icon_360.png');
+                                        &.active {
+                                            background-image: url('../images/icons/bottle_icon_red_360.png');
+                                        }
+                                    }
+                                }
+                            }
+
+                            @include mq('md'){
+                                margin-top: 0;
+                                float: right;
+                                width: 45%;
+                            }
+                        }
+
+                        >.ingredients{
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            margin-top: 20px;
+                            padding-bottom: 20px;
+                            p{
+                                text-align: left;
+                                line-height: 1.1;
+                                &:nth-child(1){
+                                    font-family: $td-got-lt-std-bd-Cn-20;
+                                }
+                                &:nth-child(2){
+                                    font-family: $td-lt-cn-18-ob;
+                                    @include font(15px);
+                                }                                
+                            }
+
+                            @include mq('md'){
+                                padding-left: 0px;
+                                max-width: 400px;
+                                margin-top: 65px;
+                            }
+                        }
+
+                        @include mq('md'){
+                            width: 100%;
+                            >h2, >p, .items-info{
+                                width: 45%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include mq('md'){
+                padding-top: rem(90px);
+                padding-bottom: rem(40px);
+            }
+        }
+
+        #block-views-products-about-block{
+            color: $white;
+            padding-top: rem(20px);
+            padding-bottom: rem(40px);
+            background-color: transparent;
+            .view-products-about{
+                .view-header{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    h2,h3{
+                        text-transform: uppercase;
+                    }
+                    h2{
+                        @include font(30px);
+                        margin-bottom: 0;
+                    }
+                    h3{
+                        @include font(25px);
+                        margin-top: 0;
+                        color: $red-text;
+                    }    
+                }
+                
+                .view-content{
+                    color: $white;
+                    .views-row{
+                        margin-bottom: 0;
+                        
+                        .views-field-field-product-image{
+                            height: $about-height-product-image-mobile;
+                            position: relative;
+                            .field-content{
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                max-height: 100%;
+                                height: 100%;
+                                img{
+                                    max-height: 570px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    bottom: -70px;
+                                    width: 108px;
+                                    @include mq('md'){
+                                        width: 56%;
+                                        max-height: 640px;
+                                    }
+                                }
+                            }
+
+                            @include mq('md'){
+                                height: $about-height-product-image-desktop;
+                            }
+                        }
+                        .views-field-title{
+                            position: relative;
+                            text-align: center;
+                            @include font(25px);
+                        }
+
+                        &.show-products {
+                            opacity: 0;
+                            transform: scale(0.7);
+                            animation: product-mobile 0.5s ease 0.5s forwards;
+                        }
+
+                        @keyframes product-mobile {
+                            100% {
+                                opacity: 1;
+                                transform: scale(1);
+                            }
+                        }
+
+                        @include mq('md'){
+                            display: inline-block;
+                            vertical-align: bottom;
+                            width: 19%;
+                            opacity: 0;
+                            left: 0;
+                            top: 0;
+                            
+
+                            &.show-products {
+                                &:nth-child(1) {
+                                    animation: product-1 0.5s ease 1s forwards;
+                                }
+
+                                &:nth-child(2) {
+                                    position: absolute;
+                                    animation: product-2 1s linear 1.5s forwards;
+                                }
+
+                                &:nth-child(3) {
+                                    position: absolute;
+                                    animation: product-3 1s linear 2.5s forwards;
+                                }
+
+                                &:nth-child(4) {
+                                    position: absolute;
+                                    animation: product-4 1s linear 3.5s forwards;
+                                }
+
+                                &:nth-child(5) {
+                                    position: absolute;
+                                    animation: product-5 1s linear 4.5s forwards;
+                                }
+
+                                @keyframes product-1 {
+                                    100% {
+                                        opacity: 1;
+                                    }
+                                }
+
+                                @keyframes product-2 {
+                                    0%{
+                                        opacity: 0;
+                                        left: 0;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        left: 190px;
+                                    }
+                                }
+
+                                @keyframes product-3 {
+                                    0%{
+                                        opacity: 0;
+                                        left: 190px;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        left: 380px;
+                                    }
+                                }
+
+                                @keyframes product-4 {
+                                    0%{
+                                        opacity: 0;
+                                        left: 380px;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        left: 570px;
+                                    }
+                                }
+
+                                @keyframes product-5 {
+                                    0%{
+                                        opacity: 0;
+                                        left: 570px;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                        left: 760px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .slick-prev,.slick-next{
+                        top: 44%;
+                    }
+
+                    .slick-prev{
+                        background-image: url('../images/icons/arrow-left.png');
+                        left: 10px;
+                    }
+
+                    .slick-next{
+                        background-image: url('../images/icons/arrow-right.png');
+                        right: 10px;
+                    }
+
+                    @include mq('md'){
+                        position: relative;
+                        margin-top: -115px;
+                    }
+                }
+
+                @include mq('md'){
+                    @include wrapper-internal();
+                }
+            }
+
+            @include mq('md'){
+                padding-top: rem(30px);
+                padding-bottom: rem(40px);
+            }
+        }
+    }
+
+    footer.footer{
+        position: relative;
+        margin-top: $home-content-space-top;
+    }
+}

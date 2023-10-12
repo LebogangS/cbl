@@ -1,0 +1,139 @@
+body.custom-carling-black-404,
+body.custom-carling-black-contact-thanks,
+body.custom-carling-black-subscribe-thanks{
+    @include remove-banner-from-body();
+    min-height: 576px;
+    
+
+    .main-container{
+        padding-top: rem(15px);
+        padding-bottom: rem(15px);
+        >.row{
+            padding-left: 15px;
+            padding-right: 15px;
+            @include wrapper-internal();
+        }
+
+        .region-content{
+            margin-bottom: rem(50px);
+            @include mq('md'){
+                margin-top: 5%;
+            }
+            p{
+                color: $white;
+            }
+
+            #block-system-main{
+                text-align: center;
+                article{
+                    h2{
+                        @include font(60px);
+                        text-transform: uppercase;
+                        color: $red-text;
+                    }
+                    p{
+                        @include font(25px);
+                        text-transform: uppercase;
+                        color: $white;
+                    }
+                    a{
+                        @include button-red();
+                        display: block;
+                        @include font(18px);
+                        width: max-content;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: rem(30px);
+                    }
+                }
+            }
+        }
+    }
+
+    footer.footer{
+        @include mq('md'){
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+body.custom-carling-black-404 {
+    .main-container{
+        .region-content{
+            #block-system-main{
+                article {
+                    h2 {
+                        transform-style: preserve-3d;
+                        transform-origin: top;
+                        animation: ani-404 2s ease forwards;
+
+                        @keyframes ani-404 {
+                            40%{
+                                transform: rotateX(180deg);
+                            }
+                            80% {
+                                transform: rotateX(-70deg);
+                            }
+                            90% {
+                                transform: rotateX(70deg);
+                            }
+                            100% {
+                                transform: rotateX(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.custom-carling-black-subscribe-thanks {
+    .main-container{
+        .region-content{
+            #block-system-main{
+                article {
+                    h2 {
+                        opacity: 0;
+                        transform: scale(0.8);
+                        animation: ani-new-suscribe 2s ease forwards;
+
+                        @keyframes ani-new-suscribe {
+                            50% {
+                                transform: scale(1.3);
+                            }
+                            100% {
+                                opacity: 1;
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.custom-carling-black-contact-thanks {
+    .main-container{
+        .region-content{
+            #block-system-main{
+                article {
+                    h2 {
+                        opacity: 0;
+                        transform: translateX(-70px) skew(35deg);
+                        animation: ani-new-contact 1s ease-out forwards;
+
+                        @keyframes ani-new-contact {
+                            100% {
+                                opacity: 1;
+                                transform: translateX(0px) skew(0deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

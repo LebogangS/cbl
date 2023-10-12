@@ -1,0 +1,61 @@
+body{
+    //background-image:url("https://docroot.dd:8443/sites/docroot.dd/files/cbl-background_0.jpg");
+    .main-container{
+        .region-content{
+            #block-webform-client-block-126{
+                text-align: center;
+                padding-top: rem(25px);
+                padding-bottom: rem(50px);
+                padding-left: 15px;
+                padding-right: 15px;
+                background-color: $black-transparency;
+                h2{
+                    color: $white;
+                    @include font(38px);
+                    @include mq('md'){
+                        @include font(40px);
+                    }
+                }
+                form{
+                    input[type='text'],input[type='email'],textarea{
+                        @include form-field-style();
+                    }
+    
+                    label {
+                        display: none;
+                    }
+    
+                    button{
+                        @include button-red();
+                        min-width: 110px;
+                    }
+
+                    .form-checkboxes {
+                        .form-item {
+                            display: block;
+                            margin-bottom: rem(10px);
+                            label {
+                                display: block;
+                                color: $white;
+                            }
+                            input {
+                                margin-right: rem(10px);
+                            }
+                        }
+                    }
+
+                    @include mq('sm'){
+                        max-width: 425px;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+
+                @include mq('md'){
+                    padding-top: rem(40px);
+                    padding-bottom: rem(60px);  
+                }
+            }
+        }
+    }
+}

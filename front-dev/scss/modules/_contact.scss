@@ -1,0 +1,130 @@
+body.custom-carling-black-contact{
+
+    @include remove-banner-from-body();
+    min-height: 770px;
+
+    .main-container{
+
+        >div.row{
+            padding-left: 15px;
+            padding-right: 15px;
+
+            h1.page-header{
+                color: $white;
+                display: block;
+                text-transform: uppercase;
+                border-bottom: 0;
+
+                @include mq('md'){
+                    margin-top: rem(30px);
+                }
+            }
+
+            .region-content{
+
+                margin-bottom: rem(50px);
+                
+                #block-system-main{
+                    >article{
+                        
+                    }
+                }
+
+                p{
+                    color:$white;
+                    a{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+
+                form{
+                    margin-top: rem(20px);
+                    .form-item{
+    
+                        &.form-type-markup{
+                            margin-bottom: 0;
+                            p{
+                                @include font(14px);
+                                max-width: 190px;
+                                @include mq('sm'){
+                                    max-width: max-content;
+                                }
+                            }
+                        }
+    
+                        input[type='text'],input[type='email'],textarea{
+                            @include form-field-style();
+                        }
+    
+                        label{
+                            display: none;
+                        }
+                    }
+    
+                    .form-actions{
+                        text-align: right;
+                        float: right;
+                        margin-top: -34px;
+                        @include mq('sm'){
+                            margin-top: -17px;
+                        }
+                    }
+    
+                    button{
+                        @include button-red();
+                        min-width: 110px;
+                    }
+                }
+
+                @include mq('md'){
+                    position: relative;
+                    top: rem(-80px);
+                    >section{
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 49.5%;
+                    }
+                    #block-system-main{
+                        padding-top: rem(80px);
+                        opacity: 0;
+                        transform: translateY(-30px);
+                        animation: ani-text-contact 2s ease forwards;
+                    }
+
+                    @keyframes ani-text-contact {
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0px);
+                        }
+                    }
+
+                    #block-webform-client-block-66 {
+                        opacity: 0;
+                        transform: translateX(-50px);
+                        animation: ani-form-contact 2s ease forwards;
+                    }
+
+                    @keyframes ani-form-contact {
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+            }
+ 
+
+            @include mq('md'){
+                @include wrapper-internal();
+            }
+        }
+    }
+
+    footer.footer{
+        @include mq('md'){
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

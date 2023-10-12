@@ -1,0 +1,296 @@
+#age_checker {
+     height: inherit;
+     background-size: inherit;
+     font-family: inherit;
+     display: inherit;
+     width: inherit;
+}
+ #age_checker li.expanded, #age_checker li.collapsed, #age_checker li.leaf {
+     padding: inherit;
+     margin: inherit;
+}
+ #age_checker ::-webkit-input-placeholder {
+     color: inherit;
+}
+ #age_checker :-moz-placeholder {
+    /* Firefox 18- */
+     color: inherit;
+}
+ #age_checker ::-moz-placeholder {
+    /* Firefox 19+ */
+     color: inherit;
+}
+ #age_checker :-ms-input-placeholder {
+     color: inherit;
+}
+ #age_checker .logo {
+     text-align: inherit;
+     padding: inherit;
+     float: inherit;
+}
+ #age_checker .region-footer {
+     text-align: inherit;
+}
+ #age_checker .region-footer .content {
+     margin-top: inherit;
+}
+ #age_checker .agegate-container {
+     background-color: inherit;
+     border: inherit;
+     width: inherit;
+     margin: inherit;
+     padding: inherit;
+}
+ #age_checker_header_message {
+     font-size: inherit;
+     color: inherit;
+     font-family: inherit;
+     text-align: inherit;
+     line-height: inherit;
+     letter-spacing: inherit;
+     padding: inherit;
+     margin: inherit;
+     display: inherit;
+     font-weight: inherit;
+}
+ #agegate_copyright_text {
+     font-size: inherit;
+     color: inherit;
+     font-family: inherit;
+     text-align: inherit;
+     line-height: inherit;
+     letter-spacing: inherit;
+     padding: inherit;
+     margin: inherit;
+     display: inherit;
+}
+ #age_checker_header_message p, #agegate_copyright_text p {
+     color: inherit;
+}
+ #age_checker_widget {
+     margin: inherit;
+     text-align: inherit;
+}
+ #age_checker .form-item {
+     margin-bottom: inherit;
+}
+ #age_checker .form-item-month, #age_checker .form-item-year, #age_checker .form-item-day {
+     display: inherit;
+     padding: inherit;
+}
+ #age_checker .form-item-day input, #age_checker .form-item-month input {
+     width: inherit;
+}
+ #age_checker .form-item-year input {
+     width: inherit;
+}
+ #age_checker .form-item-day input, #age_checker .form-item-month input, #age_checker .form-item-year input {
+     background-color: inherit;
+     color: inherit;
+     border: inherit;
+     -webkit-border-radius: inherit;
+     border-radius: inherit;
+     -webkit-box-shadow: inherit;
+     box-shadow: inherit;
+     display: inherit;
+     font-size: inherit;
+     height: inherit;
+     line-height: inherit;
+     font-weight: inherit;
+     text-align: inherit;
+     padding: inherit;
+     font-family: inherit;
+}
+ #age_checker .form-item-list-of-countries label {
+     font-family: inherit;
+     text-align: inherit;
+     line-height: inherit;
+     letter-spacing: inherit;
+     font-size: inherit;
+     color: inherit;
+}
+ #age_checker .form-item-list-of-countries select {
+     background: inherit;
+     height: inherit;
+     width: inherit;
+     padding: inherit;
+     line-height: inherit;
+     border: inherit !important;
+     -webkit-border-radius: inherit;
+     border-radius: inherit;
+     -webkit-appearance: inherit;
+     font-size: inherit;
+     color: inherit;
+     font-weight: inherit;
+     vertical-align: inherit;
+}
+ #age_checker .form-item-remember-me label {
+     padding-left: inherit;
+     background-repeat: inherit;
+     background-position: inherit;
+     vertical-align: inherit;
+     cursor: inherit;
+     height: inherit;
+     padding-top: inherit;
+     letter-spacing: inherit;
+     width: inherit;
+     text-align: inherit;
+     color: inherit;
+     font-size: inherit;
+     font-family: inherit;
+     font-weight: inherit;
+}
+ #age_checker #edit-submit {
+     height: inherit;
+     margin-top: inherit;
+     padding-top: inherit;
+     width: inherit;
+     background: inherit;
+     font-family: inherit;
+     font-weight: inherit;
+     text-transform: inherit;
+     text-shadow: inherit;
+     border: inherit;
+     min-width: inherit;
+     margin: inherit;
+     text-align: inherit;
+     display: inherit;
+     padding: inherit;
+     -webkit-appearance: inherit;
+     cursor: inherit;
+}
+ #age_checker_footer_message {
+     font-family: inherit;
+     text-align: inherit;
+     line-height: inherit;
+     color: inherit;
+     letter-spacing: inherit;
+     font-size: inherit;
+     padding: inherit;
+}
+ #age_checker_footer_message p {
+     color: inherit;
+}
+ #age_checker_error_message {
+     color: inherit;
+}
+ .form-item-day label, .form-item-month label, .form-item-year label {
+     color: inherit;
+     font-family: inherit;
+     font-size: inherit;
+     letter-spacing: inherit;
+     line-height: inherit;
+     text-align: inherit;
+}
+ #sabm-age-gate-form .form-required {
+     display: inherit;
+}
+ #age_checker_day, #age_checker_year, #age_checker_month {
+     margin-top: inherit;
+}
+ #sabm-age-gate-form {
+     margin-top: inherit;
+}
+/******************* Responsive theming *************** I have written media query for only those screen where width of the screen is smaller than the fixed width of the container div of agegate *******************************************************/
+ @media screen and (max-width: 550px) {
+     #age_checker .agegate-container {
+         width: inherit;
+         padding: inherit;
+    }
+     #age_checker_header_message {
+         font-size: inherit;
+         padding: inherit;
+    }
+     #age_checker .form-item-day input, #age_checker .form-item-month input {
+         width: inherit;
+    }
+     #age_checker .form-item-year input {
+         width: inherit;
+    }
+     #age_checker .form-item-day input, #age_checker .form-item-month input, #age_checker .form-item-year input {
+         font-size: inherit;
+         height: inherit;
+         line-height: inherit;
+         font-weight: inherit;
+         padding: inherit;
+    }
+     #age_checker .form-item-list-of-countries label {
+         font-size: inherit;
+    }
+     #age_checker .form-item-list-of-countries select {
+         background: transparent;
+         height: inherit;
+         width: inherit;
+         padding: inherit;
+         font-size: inherit;
+    }
+     #age_checker .form-item-remember-me label {
+         height: inherit;
+         width: inherit;
+         font-size: inherit;
+         font-weight: inherit;
+    }
+     #age_checker #edit-submit {
+         height: inherit;
+         width: inherit;
+         margin: inherit;
+         padding: inherit;
+    }
+     #age_checker_footer_message {
+         padding: inherit;
+    }
+}
+ .agegate-container-footer {
+     background: inherit;
+     position: inherit;
+     width: inherit;
+     bottom: inherit;
+}
+ .agegate-footer {
+     background-color: inherit;
+     border-top: solid inherit;
+     font-weight: inherit;
+     width: inherit;
+}
+ .agegatelinks-menu {
+     width: inherit;
+     margin: inherit;
+     text-align: inherit;
+     padding: inherit;
+}
+ ul.agegatelinks-menu li.leaf {
+     list-style: inherit;
+     display: inherit;
+}
+ ul.agegatelinks-menu li.leaf a {
+     color: inherit;
+     font-size: inherit;
+     font-weight: inherit;
+}
+ @media screen and (max-width: 550px) {
+     ul.agegatelinks-menu li.leaf a {
+         font-size: inherit;
+         font-weight: inherit;
+    }
+     .agegatelinks-menu {
+         width: inherit;
+         padding: inherit;
+    }
+     .agegate-container-footer {
+         position: inherit;
+    }
+}
+ @media screen and (max-width: 960px) {
+     .agegate-container-footer {
+         position: inherit;
+    }
+}
+ .sample_link {
+     font-weight: inherit;
+}
+ .age_checker_facebook_validate{
+     margin: inherit;
+     padding: inherit;
+     display: inherit;
+     text-align: inherit;
+}

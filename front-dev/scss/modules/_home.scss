@@ -1,0 +1,717 @@
+$home-content-space-top:-91px;
+
+body{
+    overflow-x: hidden;
+}
+
+body.custom-carling-black-home{
+    @include remove-banner-from-body();
+
+    #navbar {
+        z-index: 1;
+    }
+
+    .main-container{
+        position: relative;
+        top: $home-content-space-top;
+
+
+        #block-views-slider-home-block{
+            .view-slider-home{
+                margin-top: 90px;
+                .view-content{
+                    margin-bottom: 0;
+                    .views-row-1{
+                        .home-carling-black-slider-item{
+                            .home-carling-black-slider-item-content{
+                                background-color: transparent!important;
+                                top: 21rem !important;
+
+                                @media (max-width: 768px) {
+                                    top: 1rem !important;
+                                }
+                            }
+                        }
+                    }
+                    .views-row{
+                        margin-bottom: 0;
+                        .home-carling-black-slider-item {
+                            position: relative;
+                            height: auto;
+                            @include mq('sm'){
+                                height: $home-height-slider-tablet;
+                            }
+                            @include mq('md'){
+                                height: auto;
+                            }
+                            .home-carling-black-slider-item-image-mobile{
+                                height: 100%;
+                                > img {
+                                    height: auto;
+                                    width: 100%;
+                                }
+
+                                @include mq('sm'){
+                                    display: none;
+                                }
+                            }
+                            .home-carling-black-slider-item-image-desktop{
+                                display: none;
+                                >img{
+                                    width: 100%;
+                                    height: auto;
+                                }
+                                @include mq('sm'){
+                                    display: block;
+                                }
+                            }
+                            .home-carling-black-slider-item-content{
+                                position: absolute;
+                                bottom: rem(50px);
+                                padding-left: 20px;
+                                padding-right: 15px;
+                                // background-color: $black;
+                                h2,p{
+                                    color: $white;
+                                }
+
+                                @include mq('sm'){
+                                    top: unset;
+                                    bottom: rem(180px);
+                                    padding: rem(30px) (60px);       
+                                }
+                                @include mq('lg'){
+                                    top: unset;
+                                    bottom: rem(180px);
+                                    padding: 3rem 60px ;
+                                    margin-left: 12rem;
+                                }
+
+                                >h2{
+                                    font-size: 5rem;
+                                    line-height: 0.9;
+                                    span{
+                                        color: $red;
+                                    }
+
+                                    @include mq('md'){
+                                        @include font(75px);
+                                        line-height: 0.9;
+                                    }
+                                }
+
+                                >p{
+                                    text-transform: uppercase;
+                                    @include mq('sm'){
+                                        max-width: 450px;
+                                    }
+
+                                    @include mq('md'){
+                                        @include font(22px);
+                                    }
+                                }
+
+                                >a{
+                                    margin-top: rem(30px);
+                                    @include button-red();
+                                    display: block;
+                                    max-width: 130px;
+                                }
+
+                                .banner-button {
+                                    background-color: #ce1126;
+                                    border: none;
+                                    color: #FFFFFF;
+                                    text-align: center;
+                                    padding: 10px;
+                                    width: 200px;
+                                    cursor: pointer;
+                                    margin: 5px;
+                                    text-transform: uppercase;
+                                  
+                                    span {
+                                        cursor: pointer;
+                                        display: inline-block;
+                                        position: relative;
+                                        transition: 0.5s;
+                                        i   {
+                                            position: absolute;
+                                            top: 20%;
+                                            right: -30px;
+                                        }
+                                    }
+                                  
+                                    &:hover span {
+                                        padding-right: 5px;
+                                    }
+                                  
+                                    &:hover span:after {
+                                        opacity: 1;
+                                        right: 0;
+                                    }
+                                }
+                                
+                            }
+                            &.reachforgold {
+                                text-transform: uppercase;
+                                h2 {
+                                    font-size: 46px;
+                                    font-weight: bold;
+
+                                    @media(max-width: 768px) {
+                                        font-size: 23px !important;
+                                    }
+                                }
+                                p {
+                                    font-size: 30px;
+
+                                    @media(max-width: 768px) {
+                                        font-size: 12px !important;
+                                    }
+                                    span {
+                                        font-size: 122px;
+                                        color: #CE1225;
+                                    }
+                                }
+                                .price {
+                                    color: #CE1225;
+                                    font-size: 114px;
+                                    font-weight: bold;
+                                    
+                                    @media(max-width: 768px) {
+                                        font-size: 55px;
+                                    }
+                                }
+                                .home-carling-black-slider-item-content {
+                                    @media(min-width: 768px) {
+                                        padding: 0 !important;
+                                    }
+                                    @media(max-width: 768px) {
+                                        bottom: 115px !important;
+                                    }
+                                }
+                                .gold-home {
+                                    margin-top: 21vw;
+                                    @media(max-width: 768px) {
+                                        margin-top: 250px;
+                                        margin-left: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    ul.slick-dots{
+                        bottom:55px;
+                        >li{
+                            width: 12px;
+
+                            &.slick-active{
+                                button{
+                                    background-image: url('../images/icons/dot_filled.png');
+                                }
+                            }
+                            button{
+                                font-size: 0;
+                                background-image: url('../images/icons/dot_normal.png');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+
+                    @include mq('sm'){
+                        .slick-prev,.slick-next{
+                            top: 44%;
+                            width: 35px;
+                            height: 35px;
+                        }
+
+                        .slick-prev{
+                            background-image: url('../images/icons/arrow-left.png');
+                            left: 10px;
+                        }
+
+                        .slick-next{
+                            background-image: url('../images/icons/arrow-right.png');
+                            right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #block-views-history-home-block{
+            background: $white;
+            padding-top: rem(30px);
+            padding-bottom: rem(30px);
+            .view-history-home{
+                .view-content{
+                    .views-row{
+                        &.slick-current.slick-active {
+                            .home-carling-black-history-item-image {
+                                animation: ani-image-mobile 1s ease 1s forwards;
+                            }
+                        }
+                        .home-carling-black-history-item{
+                            position: relative;
+                            padding-left: rem(40px);
+                            padding-right: rem(40px);
+                            text-align: left;
+                            .home-carling-black-history-item-image{
+                                left: 0;
+                                opacity: 0;
+                                position: relative;
+                                transform: scale(0.8);
+
+                                @keyframes ani-image-mobile {
+                                    0% {
+                                        opacity: 0;
+                                        transform: scale(0.8);
+                                    }
+
+                                    100% {
+                                        opacity: 1;
+                                        transform: scale(1);
+                                    }
+                                }
+
+                                >img{
+                                    margin-left: auto;
+                                    margin-right: auto;
+
+                                    @include mq('sm'){
+                                        max-width: 70%;
+                                    }
+                                }
+                            }
+                            .home-carling-black-history-item-content{
+                                h2,h3,p{
+                                    color: $black;
+                                }
+
+                                >h2{
+                                    text-transform: uppercase;
+                                    color: $red-text;
+                                }
+                                >h3{
+                                    color: $yellow-link-menu;
+                                }
+
+                                @include mq('sm'){
+                                    padding-left: 3%;
+                                    padding-right: 3%;
+                                    padding-top: 15px;
+                                    padding-bottom: 15px;
+                                }
+                            }
+
+                            .divisor{
+                                display: none;
+                                clear: both;
+                                position: absolute;
+                                left: 50%;
+                                height: 100%;
+                                width: $width-divisor-history-dots;
+                                margin-left: $width-divisor-history-dots/-2;
+                                .line{
+                                    width: 1px;
+                                    height: 100%;
+                                    background: $gray-lt;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+
+                                .dot{
+                                    width: $width-divisor-history-dots;
+                                    height: $width-divisor-history-dots;
+                                    top: 86px;
+                                    position: absolute;
+                                    background-image: url('../images/icons/dot-circle-red.png');
+                                    background-position: center;
+                                    background-size: 100% auto;
+                                    
+                                }
+
+                                @include mq('sm'){
+                                    display: block;
+                                }
+                            }
+
+                            @include mq('sm'){
+                                height: auto;
+                                overflow: auto;
+                                .home-carling-black-history-item-image,
+                                .home-carling-black-history-item-content{
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                }
+                            }
+
+                        }
+
+                        @include mq('sm'){  
+                            clear: both;
+                            margin-bottom: 0;
+                            &:nth-child(odd){
+                                .home-carling-black-history-item{
+                                    .home-carling-black-history-item-image{
+                                        float: left;
+                                        text-align: right;
+
+                                        &.show-image {
+                                            position: relative;
+                                            left: -70px;
+                                            animation: ani-image-desktop-left 1s linear 1s forwards;
+                                        }
+                                    }
+
+                                    @keyframes ani-image-desktop-left {
+                                        0% {
+                                            opacity: 0;
+                                            left: -70px;
+                                        }
+                                        100% {
+                                            opacity: 1;
+                                            left: 0px;
+                                        }
+                                    }
+
+                                    .home-carling-black-history-item-content{
+                                        float: right;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(even){
+                                .home-carling-black-history-item{
+                                    .home-carling-black-history-item-image{
+                                        float: right;
+
+                                         &.show-image {
+                                            position: relative;
+                                            left: 70px;
+                                            animation: ani-image-desktop-right 1s linear 1s forwards;
+                                        }
+                                    }
+
+                                    @keyframes ani-image-desktop-right {
+                                        0% {
+                                            opacity: 0;
+                                            left: 70px;
+                                        }
+                                        100% {
+                                            opacity: 1;
+                                            left: 0px;
+                                        }
+                                    }
+                                    .home-carling-black-history-item-content{
+                                        float: left;
+                                        text-align: right;
+                                    }
+                                }
+                            }
+
+                            &:first-child{
+                                .home-carling-black-history-item{
+                                    .divisor{
+                                        border-top: 1px solid $gray-lt;
+                                    }
+                                }
+                            }
+                            &:last-child{
+                                .home-carling-black-history-item{
+                                    .divisor{
+                                        border-bottom: 1px solid $gray-lt;
+                                    }
+                                }
+                            }
+
+                            .home-carling-black-history-item{
+                                .home-carling-black-history-item-image,
+                                .home-carling-black-history-item-content{
+                                    width: 50%;
+                                    padding-top: rem(10px);
+                                    padding-bottom: rem(10px);
+                                }
+                            }
+                        }
+                    }
+
+                    ul.slick-dots{
+                        background-image: url('../images/icons/line-dots-slider.png');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: 100% auto;
+                        position: relative;
+                        max-width: max-content;
+                        margin-left: auto;
+                        margin-right: auto;
+                        >li{
+                            margin-left: 8px;
+                            margin-right: 8px;
+                            vertical-align: middle;
+
+                            &:first-child{
+                                margin-left: 30px;
+                            }
+                            &:last-child{
+                                margin-right: 30px;
+                            }
+
+
+                            &.slick-active{
+                                button{
+                                    background-image: url('../images/icons/dot-circle-red.png');
+                                }
+                            }
+                            button{
+                                width: 18px;
+                                height: 18px;
+                                font-size: 0;
+                                background-image: url('../images/icons/dot-circle-gray.png');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: 100% auto;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    
+                    @include mq('sm'){
+                        @include wrapper-internal();
+                    }
+                }
+            }
+        }
+
+        #block-webform-client-block-126{
+            background-color:transparent;
+            form{
+                .form-checkboxes{
+                    .form-item{
+                        input{
+                            &#edit-submitted-accept-the-terms-1{
+                                &.error{
+                                    & + p{
+                                        color: red;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer.footer{
+        position: relative;
+        margin-top: $home-content-space-top;
+    }
+}
+
+@keyframes rise-item-banner-home {
+    100% {
+        padding-top: rem(25px);
+        background-color: rgba(206,17,38,0.5);
+        height: 100%;
+       
+    }
+}
+
+body{
+    &.classOwn{
+        overflow-x: hidden;
+        background: black;
+        #page-header{
+            display: none;
+            height: auto;
+            & + .row{
+                margin: 0;
+                background: black;
+            }
+        }
+        .wrapOwn{
+            overflow-x: hidden;
+            .stage{
+                width: 100%;
+                img{
+                    width: 100%;
+                    max-width: 100%;
+                    &:first-of-type{
+                        display: block;
+                        @media(max-width: 720px){
+                            display: none;
+                        }
+                    }
+                    &:last-of-type{
+                        display: none;
+                        @media(max-width: 720px){
+                            display: block;
+                        }
+                    }
+                }
+                br{
+                    display: none;
+                }
+            }
+            .content{
+                padding: 40px 0 60px;
+                max-width: 640px;
+                width: 90%;
+                margin: 0 auto;
+                h1, h2, h3, h4, p{
+                    color: white;
+                    display: block;
+                    margin: 0 auto;
+                    font-family: 'Trade Gothic LT Std BdCn20';
+                    position: relative;
+                }
+                h1{
+                    font-size: 42px;
+                    margin-bottom: 25px;
+                    span{
+                        display: block;
+                        color: #F61031;
+                    }
+                }
+                h2{
+                    margin-bottom: 25px;
+                    font-size: 42px;
+                }
+                p{
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                h3{
+                    color: #BBA15F;
+                    margin-bottom: 40px;
+                    font-size: 42px;
+                    &.line{
+                        padding-bottom: 40px;
+                        &:after{
+                            content: '';
+                            height: 4px;
+                            width: 20%;
+                            background: #F61031;
+                            position: absolute;
+                            bottom: 0;
+                            left : 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+                h4{
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 40px auto 25px;
+                }
+                p{
+                    a{
+                        transform: skew(-15deg);
+                        background: #F61031;
+                        padding: 12px 20px;
+                        display: block;
+                        margin: 0 auto;
+                        width: 160px;
+                        text-decoration: none;
+                        span{
+                            color: white;
+                            transform: skew(15deg);
+                            display: block;
+                        }
+                    }
+                }
+                .videoresponsive{
+                    margin: 20px 0 60px;
+                }
+                .double{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    @media(max-width: 720px){
+                        flex-direction: column;
+                    }
+                    img, .info{
+                        width: 45%;
+                        @media(max-width: 720px){
+                            width: 100%;
+                        }
+                    }
+                    img{
+                        object-fit: contain;
+                        width: 48%;
+                        @media(max-width: 720px){
+                            width: 100%;
+                        }
+                    }
+                    .info{
+                        width: 41%;
+                        @media(max-width: 720px){
+                            width: 100%;
+                        }
+                        h3{
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-size: 17px;
+                            span{
+                                display: block;
+                                color: #F61031;
+                                @media(max-width: 720px){
+                                    br{
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                        }
+                        .rs{
+                            display:flex;
+                            justify-content: flex-start;
+                            align-items:center;
+                            @media(max-width: 720px){
+                                justify-content: center;
+                            }
+                            a{
+                                display: block;
+                                height: 32px;
+                                &:first-of-type{
+                                    margin-right: 15px;
+                                }
+                                img{
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px )and (max-width: 700px) {
+    .home-carling-black-slider-item-content{
+        bottom: 200px !important;
+        h2 {
+            margin-top: 320px !important;
+            font-size: 34px !important;
+        }
+
+        .gold-home {
+            padding-top: 120px;
+
+            p {
+                font-size: 18px !important;
+            }
+
+            h2 {
+                margin-top: 0 !important;
+                font-size: 26px !important;
+            }
+        }
+    }
+}

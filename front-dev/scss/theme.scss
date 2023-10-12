@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+// -- Commons -- //
+@import 'commons/fonts';
+@import 'commons/variables';
+@import 'commons/mixins';
+@import 'commons/general';
+@import 'commons/header';
+@import 'commons/footer';
+@import 'commons/subscribe';
+
+// -- Modules -- //
+@import 'modules/reset-agegate';
+@import 'modules/agegate';
+@import 'modules/home';
+@import 'modules/blog';
+@import 'modules/contact';
+@import 'modules/about';
+@import 'modules/page_404';
+@import 'modules/fathers_day';
+
+@import 'campaigns/gold-medal';
+
+// -- Views -- //
+@import 'views/banners-home';
+@import 'views/award-list';
+
+// -- Blocks -- //
+
+// -- Vendors -- //
+@import 'vendors/slick/slick';
+
+// -- Pages -- //

@@ -1,0 +1,358 @@
+
+body .main-container.container>div.row {
+    margin-top: 0 !important;
+}
+.webform-client-form-201 {
+    background-image: url(https://homebanner.absouthafrica.acsitefactory.com/sites/g/files/phfypu1716/f/Desktop%20Card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 0 350px; */
+    padding: 50px;
+    margin-left: -60%;
+    width: 100% !important;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-position: center center;
+}
+
+
+.navbar.container .container .navbar-collapse .navbar-nav>li:nth-of-type(4) a {
+    width: 200px;
+}
+.fathers-day-white {
+    color: #fff;
+}
+
+
+.fathers-day-gray {
+    color: #555555;
+}
+
+
+input, .form-control, textarea {
+    background: #000;
+    color: #fff;
+}
+
+.webform-page {
+    display: none !important;
+}
+
+.text-white {
+    color: #fff !important; 
+}
+
+input::placeholder, .form-control::placeholder, textarea::placeholder {
+    color: #fff;
+}
+.cbl-fathers-day-icon {
+      width: 120px;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+    color: #fff;
+  }
+
+  .breadcrumb {
+      display: none !important;
+  }
+
+  .form-actions {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+
+  .cbl-fathers-day-text h1 {
+      font-size: 43px;
+  }
+
+ .form-actions button, .form-actions .btn-default {
+    background: transparent;
+    color: #fff;
+    border: none;
+  }
+
+  button:focus,  .webform-next:focus, .webform-submit:focus, .webform-previous:focus {
+    border: none;
+    overflow: none;
+    box-shadow: 0;
+  }
+
+  .webform-previous {
+    position: absolute;
+    left: -30px;
+    background: transparent !important;
+    color: #fff !important;
+    border: none;
+    background-image: url(https://homebanner.absouthafrica.acsitefactory.com/sites/g/files/phfypu1716/themes/site/assets/css/23447ba7116986d5a2c6f4dfd7add222.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: left !important;
+    padding-left: 25px;
+  }
+
+  .webform-next, .webform-submit {
+    position: absolute;
+    right: -30px;
+    background: transparent !important;
+    color: #fff !important;
+    border: none;
+    background-image: url(https://homebanner.absouthafrica.acsitefactory.com/sites/g/files/phfypu1716/themes/site/assets/css/a2c7d362e1063bdb866f57ac422b73b2.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    padding-right: 25px;
+  }
+
+  img.cbl-fathers-day-icon-desktop {
+      width: 100%;
+  }
+  .cbl-fathers-day-text {
+      width: 300px !important;
+  }
+
+  .nominated-father-figure {
+      color: #fff !important;
+  }
+
+  #edit-submitted-nominator-name, #edit-submitted-nominator-surname, #edit-submitted-nominated-cellphone, #edit-submitted-nominator-cellphone{
+    border: none;
+    border-bottom: 3px solid #BCA260;
+    height: 52px;
+    border-radius: 0;
+  }
+
+  .cbl-fathers-day-sum-text {
+      margin-top: 24px;
+  }
+  .nominated-father-figure{
+      color: #fff !important;
+  }
+  section#block-webform-client-block-201, #node-216 {        width: 500px;
+    margin: 100%;
+    margin: 0 auto;
+  }
+  .cbl-fathers-day-sum-numbers {
+    display: flex;
+    /* margin: 0 -60px; */
+    width: 80%;
+  }
+
+  .celebrate-cbl-fathers-day-summary {
+      margin-top: 40px;
+      text-align: center;
+  }
+  .cbl-fathers-day-sum-numbers div {
+      background-color: black;
+      color: #fff;    padding: 5px;
+      width: 39px;
+      text-align: center;
+      margin: 0px 8px;
+      border-radius: 50%;
+  }
+
+  .cbl-fathers-day-empty-badge img {
+      width: 110px !important;
+  }
+.celebrate-cbl-fathers-day-header {
+      position: absolute;
+      right: 10%;
+      top: 10%;
+  }
+
+  .fathers-day-gray {
+      text-align: left;
+  }
+  
+  .font-size-43 {
+    font-size: 43px !important;
+  }
+  
+
+  .font-size-46 {
+    font-size: 46px !important;
+  }
+
+  .font-size-36 {
+    font-size: 36px !important;
+  }
+
+  #block-webform-client-block-201 h2.block-title {
+    display: none;
+}
+
+#nominated-father {
+    text-transform: uppercase;
+}
+
+.share-to-title  {
+    text-align: left;
+}
+.share-to-icons {
+    width: 70%;
+    /* margin: 0 auto; */
+}
+
+.share-to-icons a{
+   margin-right: 5px;
+}
+
+  h1.white-text {
+      color: #fff;}
+  h1.red-text {
+      color: #D6001C;
+  }
+  .views-field.views-field-field-background-mobile {
+      display: none;
+  }
+  .cbl-fathers-day-sum-text p {
+      color: #fff;}
+  .cbl-fathers-day-sum-numbers .active-red {
+      background-color: #D6001C;
+  }
+
+
+img.cbl-fathers-emblem {
+    width: 116px;
+}
+.cbl-fathers-emblems {
+    display: flex;
+}
+.form-item.webform-component.webform-component-markup.webform-component--slider-icons.form-group.form-item.form-type-markup.form-group {
+    display: flex;
+}
+
+
+/* .form-item, .webform-component--father-name-surname, .webform-component--selected-slider-icon, .webform-component--nominator-name  {
+    display: none !important;
+} */
+.share-to-icons img {
+    width: 50px;
+
+}
+
+.celebrate-cbl-fathers-day-summary {
+    margin-top: 40px ;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+#edit-submitted-selected-slider-icon, .edit-submitted-selected-slider-icon {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1024px) { 
+
+    .celebrate-cbl-fathers-day-summary {
+        margin-top: 20px !important;
+    }
+
+    section#block-webform-client-block-201 {
+        width: 90%;
+    }
+    .webform-client-form-201 {
+        margin-left: unset;
+        width: 100% !important;
+        margin-top: 0 !important;
+        margin-top: unset !important;
+    }
+    #node-216 {
+        width: 100%;
+    }
+
+
+    .cbl-fathers-day-text h1 {
+        font-size: 28px !important;
+    }
+
+
+    .webform-component--fathers-day-header, .celebrate-cbl-fathers-day-header {
+        position: unset !important;
+        right: unset !important;
+        top: unset !important;
+    }
+  
+    .webform-component--fathers-day-header-3 .celebrate-cbl-fathers-day-header {
+        right: 15% !important;
+    }
+
+   
+  
+/* 
+    body, body .main-container .row .col-sm-9, body .main-container .row .col-sm-12     {
+        background-image: url(https://homebanner.absouthafrica.acsitefactory.com/sites/g/files/phfypu1716/f/Home%20Page%20%E2%80%93%201%402x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } */
+
+    .webform-client-form-201 {
+        background-position: 0 420px;
+    }
+
+    img.cbl-fathers-emblem.slick-slide {
+        margin-left: -26px !important;
+    }
+
+    img.cbl-fathers-emblem {
+        width: 70px !important;
+    }
+
+    .cbl-fathers-day-text {
+        width: unset;
+    }
+
+    .cbl-fathers-day-sum-numbers {
+        width: unset;
+    }
+    
+}
+
+@media only screen and (min-width: 1054px) { 
+    img.cbl-fathers-emblem.slick-slide {
+        margin-left: -36px !important;
+    }
+
+   .webform-component--fathers-day-header  .cbl-fathers-day-sum-numbers {
+        margin: 0 -60px;
+    }
+    
+    img.cbl-fathers-emblem {
+        width: 116px !important;
+    }
+
+    .webform-component--fathers-day-header-4 {
+        position: absolute;
+        right: 20%;
+        top: 10%;
+    }
+    
+    .webform-component--fathers-day-header-4 .cbl-fathers-day-sum-numbers {
+        margin: 0 !important;
+    }
+    
+    .webform-component--fathers-day-header-4 .celebrate-cbl-fathers-day-summary, .webform-component--fathers-day-header-3 .celebrate-cbl-fathers-day-summary {
+        width: unset !important;
+    }
+    
+    .cbl-fathers-day-sum-text p {
+        width: 80% ;
+        text-align: left;
+    }
+
+   .webform-component--fathers-day-header-3  .cbl-fathers-day-sum-text p {
+        width: 50% !important;
+        text-align: left;
+    }
+    
+    .webform-component--selected-slider-icon {
+        display: none;
+    }
+    
+}
+.cbl-fathers-emblems {
+    margin-top: 50px;
+}

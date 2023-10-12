@@ -1,0 +1,394 @@
+body {
+
+	&.page-agegate {
+		// Main Age wrapper 
+		min-height: 680px;
+
+		&:before {
+			@include mq('md'){
+				background: rgba(255,255,255,1);
+				background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+				background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(10%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+				background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+				background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+				background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+				background: radial-gradient(ellipse at center, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+				content: '';
+				display: block;
+				height: 100%;
+				left: 0;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				animation: ani-agegate 15s ease infinite;
+			}
+		}
+
+		@keyframes ani-agegate {
+			0% {
+				opacity: 0;
+			}
+
+			20% {
+				opacity: 0.4;
+			}
+
+			30% {
+				opacity: 0.75;
+				animation-timing-function: step-end;
+			}
+
+			31% {
+				opacity: 0.15;
+				animation-timing-function: step-end;
+			}
+
+			32% {
+				opacity: 0.75;
+				animation-timing-function: step-end;
+			}
+
+			33% {
+				opacity: 0.25;
+				animation-timing-function: step-end;
+			}
+
+			34% {
+				opacity: 0;
+				animation-timing-function: step-end;
+			}
+
+			100% {
+				opacity: 0;
+			}
+		}
+		#age_checker {
+			background-size: contain;
+			background-position: center;			
+			background-repeat: no-repeat;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+
+			// Brand
+			.logo {
+				
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 50px;
+				img {
+					display: inline-block;
+					width: 200px;
+					height: 100px;
+				}
+
+				@include mq('md'){
+					height: 50%;
+					margin-left: initial;
+					margin-right: initial;
+					width: 47%;
+					float: left;
+					margin-top: rem(65px);
+				}
+			}
+
+			.agegate-container {
+				max-height: 60%!important;
+				display: flex;
+				align-items: center;				
+				margin-top: 80px;
+				@include mq('md'){
+					margin-left: initial;
+					margin-right: initial;
+					width: 53%;
+					float: left;
+					margin-top: rem(50px);
+					margin-bottom: rem(30px);
+				}
+				
+				
+				// Hide unncesary copyright
+				text-align: center;
+				#agegate_copyright_text {
+					
+				}
+
+				// Age content
+				#block-system-main {
+					
+					// Top message
+					#age_checker_header_message {
+						>div{
+							text-transform: uppercase;
+							@include font(16px);
+
+							&.agegate-text-red{
+								color: $red-text;
+							}
+
+							&.agegate-text-white{
+								color:$white;
+							}
+
+							@include mq('md'){
+								font-size: 1.4em;
+							}
+						}
+						
+					}
+
+					// Form
+					#age_checker_widget {
+						form {
+							&#sabm-age-gate-form {
+								width: 100%;
+
+								>div{
+									padding-left: 15px;
+									padding-right: 15px;
+								}
+								// Select default styles
+								.form-type {
+									&-select {
+										
+										label {
+											
+										}
+										select {
+											background-image: url('../images/icons/arrow_down_combo_country.png');
+											background-repeat: no-repeat;
+											background-position: right center;
+										}								
+										
+									}
+								}
+
+								// Field schemma
+								.form-item {
+									
+									&.form-item-list-of-countries{
+										padding-bottom: 10px;
+										margin-top: 10px;
+										text-transform: uppercase;
+										select.form-control{
+											width: 100%;
+											text-transform: uppercase;
+											@include form-field-style();
+											padding-left: 10px;
+										}
+
+										label.control-label{
+											display: none;
+										}
+									}
+
+									&.form-item-remember-me{
+										text-align: left;
+										padding-left: 0px;
+										margin-top: 20px;
+										margin-bottom: 4px;
+
+										label{
+											text-transform: uppercase;
+											@include label-checkbox-span();
+										}
+									}
+
+
+									&.form-type-textfield{
+										display: inline;
+										vertical-align: middle;
+										
+										padding-left: 0px;
+										padding-right: 0px;
+										position: relative;
+										&.form-item-day, &.form-item-month{
+											width: 28%;
+										}
+										&.form-item-year{
+											width: 40%;
+										}
+										&.form-item-month{
+											padding-left: 2%;
+											padding-right: 2%;
+										}
+
+										>input{
+											@include form-field-style();
+											font-size: 2em;
+										}
+									}
+									// Date									
+
+									&-day,
+									&-month,
+									&-year {
+										label {
+											display: none;
+										}
+										
+										input {
+											
+											@include placeholder {
+												
+											}
+
+											@include mq('md') {
+																					
+											}
+										}
+
+										@include mq('md') {
+																				
+										}
+									}
+
+									&-month {
+										@include mq('md') {
+
+										}
+									}
+
+									// Accept checkbox
+									&-remember-me {
+										
+										.ab-inbev-remember-me,
+										.control-label {
+											
+											@include mq('md') {
+												
+											}
+										}
+
+										.ab-inbev-remember-me {
+											@include mq('md') {
+											}
+											span {
+												a {
+												}
+											}
+											@include mq('md') {
+											}
+										}
+									}
+								}
+
+								.ab-inbev-remember-me{
+									font-size: 0.8em;
+									text-align: left;
+									margin-top: 10px;
+									a{
+										color: $white;
+									}
+								}
+
+
+								// CTAS
+								#edit-submit {
+
+									margin-left: auto;
+									margin-right: auto;
+									margin-top: 15px;
+
+									@include button-red();
+									
+									@include mq('md') {
+										margin-left: initial;
+										margin-right: initial;
+										display: inline-block;
+										vertical-align: middle;
+									}
+								}
+
+								.label_or{
+									margin-top: 10px;
+									margin-bottom: 12px;
+
+									@include mq('md'){
+										display: inline-block;
+										vertical-align: middle;
+										margin-top: 20px;
+										margin-bottom: 0px;
+										margin-left: rem(20px);
+										margin-right: rem(20px);
+									}
+								}
+
+								
+							}
+						}
+					}
+
+					.age_checker_facebook_validate {
+						position: relative;
+						width: 225px;
+						margin-left: auto;
+						margin-right: auto;
+						height: 50px;
+						
+						#facebook{
+							
+							
+							
+						}
+						
+
+						.fb_iframe_widget {
+							z-index: 2;
+							position: absolute;
+							top: 8%;
+							left: 8%;
+							opacity: $opacity-facebook-button;
+						}
+						
+						.button_facebook {
+							position: absolute;
+							left: 0;
+							@include button-blue();
+							min-width: 225px;
+							&:after{
+								clear: both;
+							}
+						}
+
+						@include mq('md') {
+							display: inline-block;
+							vertical-align: middle;
+							margin-top: 22px;
+						}
+					}
+
+					@include mq('md'){
+						max-width: 505px;
+					}
+				}
+
+				
+			}
+
+
+			@include mq('md'){
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				min-height: 100%;
+				clear: both;
+			}
+		}
+	}
+
+	#skip-link{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		min-height: 1000px;
+		background-color:$black-transparency;
+		z-index: -1;
+		margin-top: rem(-50px);
+	}
+}

@@ -1,0 +1,349 @@
+
+body {
+	.footer {
+		border: none;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		background: $black;
+	}
+}
+
+.ab-inbev-footer {
+	font-family: $td-cn-18;
+	padding: rem(10px);
+	@include mq('md') {
+		padding: rem(11px);
+		position: relative;
+	}
+
+	.ab-inbev-footer-content-1,
+	.ab-inbev-footer-content-2 {
+		@include cont;
+		color: $white;
+		text-align: center;
+		a {
+			color: $white;
+		}
+
+		@include mq('md') {
+			position: relative;
+		}
+	}
+
+	// Logo
+	.ab-inbev-footer-aware-logo {
+		width: 241px;
+		height: 59px;
+		background-image: url('../images/brand/awarelogo-v2.png');
+		background-size: 100% 100%;
+		overflow: hidden;
+		text-indent: -999999px;
+		display: block;
+		margin: rem(5px) auto;
+		@include mq('md') {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0 0 0;
+		}
+	}
+	
+	// Tap
+	.tap-logo {
+		@include mq('md') {
+			display: inline-block;
+			width: auto;
+			vertical-align: middle;
+		}
+	}
+
+	.ab-inbev-footer-tap-into-your-beer {
+		display: block;
+		overflow: hidden;
+		text-indent: -999999px;
+		width: rem(200px);
+		height: rem(13px);
+		background-image: url('../images/brand/tap-beer.png');
+		background-size: 100% 100%;
+		margin: 0 auto rem(40px);
+			
+		@include mq('md') {
+			margin-top: rem(-63px);
+		}
+		
+	}
+
+	// Social footer logos
+	.ab-inbev-footer-social-media {
+		text-align: center;
+		padding: 0;
+		display: block;
+		@include mq('md') {
+			width: auto;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 rem(60px);
+		}
+		li {
+			display: inline-block;
+			margin: 0 rem(5px);
+			@include mq('md') {
+				margin: 0 0;
+			}
+			a {
+				display: block;
+				width: rem(29px);
+				height: rem(29px);
+				position: relative;
+				border-radius: 100%;
+				background-color: transparent ;
+				&:hover {
+					background-color: rgba(255,255,255,0.2);
+				}
+			}
+
+			&.ab-inbev-footer-social-media-facebook {
+				margin-left: 0;
+				a {
+					@include iconSVG('../images/icons/facebook-logo.svg', 14px);
+					text-indent: 999999px;
+				}
+			}
+			&.ab-inbev-footer-social-media-instagram {
+				a {
+					@include iconSVG('../images/icons/instagram-logo.svg', 14px);
+					text-indent: 999999px;
+				}
+			}
+			&.ab-inbev-footer-social-media-youtube {
+				a {
+					@include iconSVG('../images/icons/youtube-logo.svg', 14px);
+					text-indent: 999999px;
+				}
+			}
+			&.ab-inbev-footer-social-media-twitter {
+				margin-right: 0;
+				a {
+					@include iconSVG('../images/icons/twitter-logo.svg', 14px);
+					text-indent: 999999px;
+				}
+			}
+		}
+	}
+
+	// First footer line
+	.ab-inbev-footer-content-1 {
+		padding: 0;
+		@include mq('md') {
+			padding: rem(12px) 0;
+			border-bottom: rem(1px) solid $white;
+			text-align: left;
+		}
+		ul {
+			&.ab-inbev-footer-menu {
+				display: block;
+				text-align: center;
+				padding: 0 0 0 0;
+				@include mq('md') {
+					text-align: left;
+					display: inline-block;
+					float: right;
+					text-align: right;
+					margin-top: rem(2px);
+				}
+				li {
+					display: inline-block;
+					border-right: rem(1px) solid $white;
+					@include mq('md') {
+						line-height: 1;
+					}
+					a {
+						padding: 0 rem(14px);
+						@include font(14px);						
+						text-transform: uppercase;
+						@include mq('tb') {
+							@include font(10px);
+						}
+					}
+					&:last-child {
+						border-right: none;
+						a {
+							padding-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Second Line
+	.ab-inbev-footer-content-2 {
+		padding: rem(24px) 0;
+		text-align: center;
+		@include mq('md') {
+			width: 100%;
+			text-align: left;
+			overflow: hidden;
+		}
+		
+		.ab-inbev-footer-content-2-text-1,
+		.ab-inbev-footer-content-2-text-2,
+		.ab-inbev-footer-content-2-text-3 {
+			text-align: center;
+			@include font(14px);
+			font-weight: normal;
+			@include mq('md') {
+				text-align: left;
+				display: block;
+				float: none;
+				width: max-content;
+			}
+		}
+		.ab-inbev-footer-content-2-text-1 {
+			font-family: 'FuturaStd-Bold';
+			@include font(12px);
+			@include mq('md') {
+				padding-right: rem(16px);
+			}
+		}
+		.ab-inbev-footer-content-2-text-2 {
+			font-family: 'FuturaStd-Book';
+			@include font(10px);
+			margin-top: 15px;
+			@include mq('md') {
+				
+			}
+		}
+		.ab-inbev-footer-content-2-text-3 {
+			font-family: 'FuturaStd-Book';
+			@include font(10px);
+			margin-bottom: 20px;
+			@include mq('md') {
+				
+			}
+		}
+	}
+
+	ul.footer-menu, #block-menu-menu-footer-menu ul.menu.nav{
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 10px;
+		>li{
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0px 15px;
+			margin-bottom: 8px;
+			margin-top: 8px;
+			text-transform: uppercase;
+			line-height: 1;
+			a{
+				font-family: 'FuturaStd-Bold';
+				display: block;
+				@include font(12px);
+				padding: 0;
+			}
+			&:nth-child(even){
+				border-left: 1px solid $white;
+			}
+		}
+
+		@include mq('md'){
+			display: inline-block;
+			vertical-align: middle;
+			float: right;
+			>li{
+				border-left: 1px solid $white;
+				&:first-child{
+					border-left: 0px solid $white;
+				}
+
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	#block-menu-menu-footer-menu{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 315px;
+		margin-top: 15px;
+		@include mq('md'){
+			margin-top: initial;
+			margin-left: initial;
+			margin-right: initial;
+			max-width: initial;
+			display: inline-block;
+			vertical-align: middle;
+			float: right;
+		}
+	}
+
+	ul.social-networks{
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		>li{
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 8px;
+			margin-right: 8px;
+			>a{
+				width: $icon-social;
+				height:$icon-social;
+				display: inline-block;
+			}
+
+			&:nth-child(1){
+				>a{
+					@include iconSVG('../images/icons/icon-facebook.svg', $icon-social);
+				}
+			}
+			&:nth-child(2){
+				>a{
+					@include iconSVG('../images/icons/icon-instagram.svg', $icon-social);
+				}
+			}
+			&:nth-child(3){
+				>a{
+					@include iconSVG('../images/icons/icon-youtube.svg', $icon-social);
+				}
+			}
+			&:nth-child(4){
+				>a{
+					@include iconSVG('../images/icons/icon-twitter.svg', $icon-social);
+				}
+			}
+		}
+
+		@include mq('md'){
+			position: absolute;
+			top: rem(30px);
+			right: 0;
+		}
+	}
+}
+
+//Fix for agegate
+body .agegate-container-footer {
+	.agegate_copyright_text {
+		padding: 0 0 0 0;
+		background: $black;
+		.ab-inbev-remember-me{
+			color: $white;
+			a{
+				color: $white;
+			}
+		}
+	}
+
+	@include mq('md'){
+		position: absolute;
+		width: 100%;
+		min-height: 60px;
+		bottom: 0;
+	}
+}
